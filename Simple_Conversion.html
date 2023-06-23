@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <title>NewWebsite</title>
+</head>
+
+<body>
+  <!-- The taskbar at the top -->
+  <div class="taskbar">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="https://www.linkedin.com/in/islam-said-514927263/" target="_blank">About Me</a></li>
+      <li><a href="#"></a></li>
+    </ul>
+    <div id="clock"></div>
+  </div>
+  <!-- The sidebar  -->
+  <div class="sidebar">
+    <ul>
+      <li><a href="https://en.wikipedia.org/wiki/Metric_system" target = "_blank">The Metric System</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/Imperial_units" target="_blank">The Imperial System</a> </li>
+      <li><a href="#" target="_blank"></a></li>
+      <li><a href="#"></a></li>
+    </ul>
+  </div>
+  <!-- The conversion button -->
+  <div class="conversion-container" id="convertButton">
+    <div class="conversion-bar">
+      <h1>Unit Conversion 1</h1>
+      <input type="text" id="inputValue" placeholder="Enter a value">
+      <br>
+      <select id="sourceUnit">
+        <option value="cm">Centimeters</option>
+        <option value="in">Inches</option>
+        <option value="me">Meters</option>
+        <option value="ft">Feet</option>
+        <option value="km">Kilometers</option>
+      </select>
+      <br>
+      <button onclick="handleConvert()">Convert</button>
+    </div>
+    <div class="conversion-bar">
+      <h1>Unit Conversion 2</h1>
+      <input type="text" id="outputValue" placeholder="Converted value" readonly>
+      <br>
+      <select id="targetUnit">
+        <option value="cm">Centimeters</option>
+        <option value="in">Inches</option>
+        <option value="m">Meters</option>
+        <option value="ft">Feet</option>
+        <option value="km">Kilometers</option>
+      </select>
+    </div>
+  </div>
+  <script src="sandbox.js"></script>
+</body>
+
+</html>
+
+link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
